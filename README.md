@@ -7,6 +7,8 @@
 
 [![ForTheBadge made-with-flutter](https://img.shields.io/badge/flutter-made%20with%20flutter-blue.svg)](https://flutter.dev)
 
+This stacked architecture app example is an implementation of [Johannes Milke filter_listview_example](https://github.com/JohannesMilke/filter_listview_example), you can also watch the [Tutorial Video](https://www.youtube.com/watch?v=oFZIwBudIj0) 
+
 ## Features
 * Search and Filter Offline
 * Search and Filter Online
@@ -26,7 +28,7 @@
 
 Offline View               |  Offline Search & Filter View               | Online View               |  Online Search & Filter View
 :-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
-![](https://github.com/isaacadariku/farm_expenses/blob/master/screenshots/flutter_02.png?raw=true)|![](https://github.com/isaacadariku/farm_expenses/blob/master/screenshots/flutter_03.png?raw=true)|![](https://github.com/isaacadariku/farm_expenses/blob/master/screenshots/flutter_04.png?raw=true)|![](https://github.com/isaacadariku/farm_expenses/blob/master/screenshots/flutter_01.png?raw=true)|
+![](https://github.com/isaacadariku/stacked_filter_search_example_app/blob/master/screenshots/flutter_02.png?raw=true)|![](https://github.com/isaacadariku/stacked_filter_search_example_app/blob/master/screenshots/flutter_03.png?raw=true)|![](https://github.com/isaacadariku/stacked_filter_search_example_app/blob/master/screenshots/flutter_04.png?raw=true)|![](https://github.com/isaacadariku/stacked_filter_search_example_app/blob/master/screenshots/flutter_01.png?raw=true)|
 
 ## Directory Structure
 <details>
@@ -36,7 +38,6 @@ Offline View               |  Offline Search & Filter View               | Onlin
 |-- lib
 |   |-- app
 |   |   '-- locator.dart
-|   | 
 |   |-- core
 |   |   |-- model
 |   |   |  '-- book_model.dart
@@ -68,6 +69,6 @@ Offline View               |  Offline Search & Filter View               | Onlin
      
 ## Visitors Count
 
-<img align="left" src = "https://profile-counter.glitch.me/farm_expenses/count.svg" alt ="Loading">
+<img align="left" src = "https://profile-counter.glitch.me/stacked_filter_search_example_app/count.svg" alt ="Loading">
 
 [![ForTheBadge built-with-love](http://ForTheBadge.com/images/badges/built-with-love.svg)](https://github.com/isaacadariku/)

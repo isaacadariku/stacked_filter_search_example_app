@@ -14,11 +14,13 @@ Future<void> main() async {
   }
 }
 
+/// Root of app
 class MyApp extends StatelessWidget {
   ///
   const MyApp({Key key}) : super(key: key);
 
-  static final String title = 'Stacked Filter & Search';
+  /// The title of the app 
+  static const String title = 'Stacked Filter & Search';
 
   @override
   Widget build(BuildContext context) {
@@ -29,7 +31,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: MainView(),
+      home: const MainView(),
     );
   }
 }

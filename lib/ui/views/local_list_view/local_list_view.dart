@@ -1,12 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:stacked/stacked.dart';
-import 'package:stacked_filter_search/ui/shared/const_color.dart';
-import 'package:stacked_filter_search/ui/shared/widgets/search_textfield_widget.dart';
 
 import '../../../main.dart';
+import '../../shared/const_color.dart';
+import '../../shared/widgets/search_textfield_widget.dart';
 import 'local_list_viewmodel.dart';
 
+///
 class LocalListView extends StatelessWidget {
+  ///
   const LocalListView({Key key}) : super(key: key);
 
   @override
@@ -15,7 +17,7 @@ class LocalListView extends StatelessWidget {
       builder: (context, model, child) => Scaffold(
         backgroundColor: BrandColors.kPrimary,
         appBar: AppBar(
-          title: Text(MyApp.title),
+          title: const Text(MyApp.title),
           centerTitle: true,
         ),
         body: Column(
@@ -27,7 +29,7 @@ class LocalListView extends StatelessWidget {
             ),
             Expanded(
               child: model.isBusy
-                  ? Center(child: CircularProgressIndicator())
+                  ? const Center(child: CircularProgressIndicator())
                   : ListView.builder(
                       itemCount: model.books.length,
                       itemBuilder: (context, index) {

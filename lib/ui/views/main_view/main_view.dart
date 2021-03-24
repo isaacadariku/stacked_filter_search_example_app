@@ -8,7 +8,11 @@ import '../local_list_view/local_list_view.dart';
 import '../remote_list_view/remote_list_view.dart';
 import 'main_viewmodel.dart';
 
+///
 class MainView extends StatelessWidget {
+  ///
+  const MainView({Key key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return ViewModelBuilder<MainViewModel>.reactive(
@@ -18,16 +22,12 @@ class MainView extends StatelessWidget {
           body: PageTransitionSwitcher(
               duration: const Duration(milliseconds: 600),
               reverse: model.reverse,
-              transitionBuilder: (
-                Widget child,
-                Animation<double> animation,
-                Animation<double> secondaryAnimation,
-              ) {
+              transitionBuilder: (child, animation, secondaryAnimation) {
                 return SharedAxisTransition(
-                  child: child,
                   animation: animation,
                   secondaryAnimation: secondaryAnimation,
                   transitionType: SharedAxisTransitionType.vertical,
+                  child: child,
                 );
               },
               child: getViewForIndex(model.currentIndex, model)),
@@ -40,7 +40,7 @@ class MainView extends StatelessWidget {
             unselectedLabelStyle: kBodyTextStyle(context, color: ThemeColors.kWhite),
             currentIndex: model.currentIndex,
             onTap: model.setIndex,
-            items: [
+            items: const [
               BottomNavigationBarItem(
                 icon: Icon(Icons.work_off_outlined),
                 label: 'Filter Offline',
@@ -57,14 +57,15 @@ class MainView extends StatelessWidget {
     );
   }
 
+  ///
   Widget getViewForIndex(int index, MainViewModel model) {
     switch (index) {
       case 0:
-        return LocalListView();
+        return const LocalListView();
       case 1:
-        return RemoteListView();
+        return const RemoteListView();
       default:
-        return LocalListView();
+        return const LocalListView();
     }
   }
 }

@@ -1,5 +1,6 @@
 import '../models/book_model.dart';
 
+/// Hard typed List of books for offline usage
 final List<Book> offlineBooks = [
   Book(
     id: 1,

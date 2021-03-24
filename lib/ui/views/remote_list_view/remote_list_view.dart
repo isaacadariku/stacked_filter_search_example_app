@@ -6,7 +6,9 @@ import '../../shared/const_color.dart';
 import '../../shared/widgets/search_textfield_widget.dart';
 import 'remote_list_viewmodel.dart';
 
+///
 class RemoteListView extends StatelessWidget {
+  ///
   const RemoteListView({Key key}) : super(key: key);
 
   @override
@@ -17,7 +19,7 @@ class RemoteListView extends StatelessWidget {
       builder: (context, model, child) => Scaffold(
         backgroundColor: BrandColors.kPrimary,
         appBar: AppBar(
-          title: Text(MyApp.title),
+          title: const Text(MyApp.title),
           centerTitle: true,
         ),
         body: Column(
@@ -29,7 +31,7 @@ class RemoteListView extends StatelessWidget {
             ),
             Expanded(
               child: model.isBusy
-                  ? Center(child: CircularProgressIndicator())
+                  ? const Center(child: CircularProgressIndicator())
                   : ListView.builder(
                       itemCount: model.books.length,
                       itemBuilder: (context, index) {
